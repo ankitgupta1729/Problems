@@ -1,0 +1,17 @@
+// Bubble Sort 
+#include<stdio.h>
+int bubble_sort(int,int);
+int main()
+{
+  int n,*arr;
+  scanf("Enter the number of elements which you want to sort: %d",&n);
+  arr =(int*)malloc(n*sizeof(int));
+  bubble_sort(arr,n); 
+  return 0;
+}
+bubble_sort(int *p,int n)
+{
+  for(i=0;i<n;i++)
+     printf("%d",p[i]);
+}
+
